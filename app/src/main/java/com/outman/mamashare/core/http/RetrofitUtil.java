@@ -17,5 +17,6 @@ public class RetrofitUtil {
                             .baseUrl(BASE_URL)
                             .build();
         }
+
     }
 }
