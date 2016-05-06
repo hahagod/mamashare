@@ -12,7 +12,7 @@ import com.outman.mamashare.R;
 /**
  *
  */
-public abstract class BaseActivity extends AppCompatActivity implements Toolbar.OnMenuItemClickListener{
+public abstract class AppBaseActivity extends AppCompatActivity implements Toolbar.OnMenuItemClickListener{
 
     protected Toolbar toolbar;
     protected TextView toolbar_title;

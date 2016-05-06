@@ -6,15 +6,15 @@ import retrofit2.Retrofit;
 /**
  * Retrofit 封装
  */
-public class RetrofitUtil {
+public class AppRetrofit {
 
-    private static final String BASE_URL = " http://tapi.m.0-6.com/api/android/";
+    private static final String BASE_URL = "http://tapi.m.0-6.com/api/android/";
 
-    private RetrofitUtil() {
+    private AppRetrofit() {
     }
 
     public static class RetrofitHolder {
-        private static OkHttpClient okHttpClient = new OkHttpClient.Builder()
+        private static final OkHttpClient okHttpClient = new OkHttpClient.Builder()
                 .addInterceptor(new HeaderInterceptor())
                 .build();
 
